@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PENGKONVERSIAN NILAI</title>
+</head>
+<h3>Pengkonversian Nilai</h3>
+<script language="Javascript">
+	function test(){
+		var val1=document.kirim. T1.value
+		if (val1<=40&&val1>=0)
+			document.kirim. T2.value="E"
+		else if (val1<=55&&val1>=41)
+			document.kirim. T2.value="D"
+		else if (val1<=60&&val1>=56)
+			document.kirim. T2.value="C"
+		else if (val1<=65&&val1>=61)
+			document.kirim. T2.value="BC"
+		else if (val1<=70&&val1>=66)
+			document.kirim. T2.value="B"
+		else if (val1<=80&&val1>=71)
+			document.kirim. T2.value="AB"
+		else if (val1<=100&&val1>=81)
+			document.kirim. T2.value="A"
+		else
+			document.kirim. T2.value="MASUKAN NILAI YANG BENAR!"
+	}
+</script>
+<body>
+	<form method="POST" name="kirim">
+		<p>
+			NILAI <input type="text" name="T1" size="20"> ADALAH NILAI <input type="text" name="T2" size="20">
+		</p>
+		<p>
+			<input type="button" name="B1" value="KONVERSI " onclick=test()>
+		</p>
+	</form>
+</body>
+</html>

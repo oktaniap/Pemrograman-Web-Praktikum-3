@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script type="text/javascript">
+	function t(){
+		var a1=parseFloat(document.kirim.a.value)
+		var b2=parseFloat(document.kirim.b.value)
+		document.kirim.h.value=(a1+b2)
+	}
+	function k(){
+		var a1=parseFloat(document.kirim.a.value)
+		var b2=parseFloat(document.kirim.b.value)
+		document.kirim.h.value=(a1-b2)
+	}
+	function ka(){
+		var a1=parseFloat(document.kirim.a.value)
+		var b2=parseFloat(document.kirim.b.value)
+		document.kirim.h.value=(a1*b2)
+	}
+	function ba(){
+		var	a1=parseFloat(document.kirim.a.value)
+		var b2=parseFloat(document.kirim.b.value)
+		document.kirim.h.value=(a1/b2)
+	}
+</script>
+<body>
+	<form method="POST" name="kirim">
+		<h3>KALKULATOR</h3>
+		<p>
+			BIL 1 &nbsp <input type="text" name="a">
+			<br><br>
+			BIL 2 &nbsp <input type="text" name="b">
+		</p>
+		<p>
+			<input type="button" name="tambah" value="+" onclick=t()>
+			<input type="button" name="kurang" value="-" onclick=k()>
+			<input type="button" name="kali" value="x" onclick=ka()>
+			<input type="button" name="bagi" value="/" onclick=ba()>
+			<input type="reset" name="reset" value="reset">
+		</p>
+		<p>
+			HASIL <input type="text" name="h">
+		</p>
+	</form>
+</body>
+</html>
